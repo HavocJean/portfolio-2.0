@@ -1,0 +1,1218 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* MENU ESQUERDA FIXO */
+.menu-left {
+    background-color: #f7f7f7;
+    height: 100vh;
+    width: 220px;
+    border-right: 1px solid #CCC;
+    position: fixed !important;
+    z-index: 1;
+}
+
+.menu-left h1 {
+    margin-top: 15vh;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    font-weight: 900;
+}
+
+.menu-left h1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-left li {
+    margin-left: 54px;
+    margin-top: 15px;
+}
+
+.menu-left li>a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.menu-left li>a:hover {
+    color: blueviolet;
+}
+
+.active {
+    color: blueviolet !important;
+}
+
+.icons {
+    margin-top: 55px;
+    margin-left: 55px;
+}
+
+.icons i {
+    font-size: 20px;
+    margin-right: 7px;
+    color: #000;
+}
+
+/* HOME */
+.main {
+    width: 100%;
+    margin-left: 220px !important;
+}
+
+.bannerimg {
+    background-image: url('../imgs/banner.jpg');
+    width: 100%;
+    height: 100vh;
+	background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+
+.bannertexto {
+    width: 500px;
+    padding-top: 32vh;
+    padding-left: 100px;
+    color: #FFF;
+}
+
+.bannertexto h1 {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.bannertexto h2 {
+    font-weight: 900;
+}
+
+.bannertexto p {
+    font-size: 16px;
+}
+
+.bannertexto button {
+    border: 3px solid #FFF;
+    height: 50px;
+    width: 120px;
+    color: #FFF;
+    background-color: rgba(0,0,0,0.1);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.bannertexto button {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.bannertexto button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: blueviolet;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.bannertexto button:hover, .bannertexto button:focus, .bannertexto button:active {
+    color: #FFF;
+    border: 3px solid blueviolet;
+}
+
+.bannertexto button:hover:before, .bannertexto button:focus:before, .bannertexto button:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/* SOBRE */
+.sobre {
+    padding-top: 15vh;
+    height: 110vh;
+    border-bottom: 1px solid #CCC;
+}
+
+.sobre-interno {
+    padding-left: 10% !important;
+}
+
+.imgprofile img {
+    width: 300px;
+    border-radius: 15px;
+}
+
+.sobremim {
+    margin-left: 8%;
+}
+
+.sobremim h2 {
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.sobremim h3 {
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.sobremim p {
+    padding-top: 10px;
+    margin-right: 20%;
+    margin-left: 20px;
+}
+
+.pontos ul li {
+    margin-left: 35px;
+}
+
+/* botao saiba mais */
+.saibamais {
+    border: 3px solid blueviolet;
+    height: 50px;
+    width: 140px;
+    color: #FFF;
+    background-color: blueviolet;
+    font-weight: 600;
+}
+
+.saibamais {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.saibamais:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #FFF;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.saibamais:hover, .saibamais:focus, .saibamais:active {
+    color: blueviolet;
+    border: 3px solid blueviolet;
+}
+
+.saibamais:hover:before, .saibamais:focus:before, .saibamais:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.botaoSobre {
+    margin-top:10px;
+    margin-left:20px;
+}
+
+/* HABILIDADE */
+.habilidade {
+    padding-top: 15vh;
+    height: 110vh;
+    border-bottom: 1px solid #CCC;
+    background-color:rgb(250, 250, 250);
+}
+
+.habilidade-interno {
+    padding-left: 10% !important;
+}
+
+.habilidade-interno h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.habilidade-interno h2 {
+    font-size: 15px;
+    font-weight: 300;
+    color: #CCC;
+}
+
+.skillBar-titulo {
+    font-size: 18px;
+    font-weight: 600;
+    float: left;
+    margin-top: 35px;
+}
+
+.skillBar-porce {
+    color: #a3a3a3;
+    float: right;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 35px;
+    margin-right: 10%;
+    margin-bottom: 15px;
+}
+
+.skillBar {
+    clear: both;
+    width: 90%;
+    height: 5px;
+    background-color: blueviolet;
+}
+
+.skillBar-bs {
+    width: 67.5%;
+    height: 5px;
+    background-color: #000;
+}
+
+.skillBar-css {
+    width: 72%;
+    height: 5px;
+    background-color: #000;
+}
+
+.skillBar-html {
+    width: 81%;
+    height: 5px;
+    background-color: #000;
+}
+
+.skillBar-git {
+    width: 76.5%;
+    height: 5px;
+    background-color: #000;
+}
+
+.skillBar-js {
+    width: 63%;
+    height: 5px;
+    background-color: #000;
+}
+
+.skillBar-jq {
+    width: 54%;
+    height: 5px;
+    background-color: #000;
+}
+
+.skillBar-php {
+    width: 67.5%;
+    height: 5px;
+    background-color: #000;
+}
+
+.skillBar-lara {
+    width: 58.5%;
+    height: 5px;
+    background-color: #000;
+}
+
+.skillBar-sql {
+    width: 63%;
+    height: 5px;
+    background-color: #000;
+}
+
+.skillBar-vue {
+    width: 49.5%;
+    height: 5px;
+    background-color: #000;
+}
+
+/* EXPERIENCIA */
+.experiencia {
+    padding-top: 15vh;
+    height: 130vh;
+    border-bottom: 1px solid #CCC;
+}
+
+.exp-interno {
+    padding-left: 10% !important;
+}
+
+.exp-interno h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.exp-interno h2 {
+    font-size: 15px;
+    font-weight: 300;
+    color: #CCC;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    width: 4px;
+    height: 490px;
+    background-color: black;
+    position: absolute;
+    left: 56%;
+}
+
+.box {
+    width: 350px;
+    border-radius: 10px;
+    background-color: #FFF;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 0 15px 1px #ddd;
+    padding: 15px 20px;
+    text-align: right;
+}
+
+.box1 {
+    width: 350px;
+    border-radius: 10px;
+    background-color: #FFF;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 0 15px 1px #ddd;
+    padding: 15px 20px;
+    float: right;
+    margin-right: 15%;
+    text-align: left;
+}
+
+.box2 {
+    width: 350px;
+    border-radius: 10px;
+    background-color: #FFF;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 0 15px 1px #ddd;
+    padding: 15px 20px;
+    clear: both;
+    text-align: right;
+}
+
+.data {
+    font-size: 14px;
+    font-weight: 600;
+    width: 50px;
+    border: 1px solid #7d37ba;
+    background-color: #7d37ba;
+    border-radius: 5px;
+    float: right;
+    color: #FFF;
+    text-align: center;
+}
+
+.cargo {
+    clear: both;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.txt-cargo {
+    font-size: 14px;
+}
+
+.dataRight {
+    font-size: 14px;
+    font-weight: 600;
+    width: 50px;
+    border: 1px solid #7d37ba;
+    background-color: #7d37ba;
+    border-radius: 5px;
+    color: #FFF;
+    text-align: center;
+}
+
+.cargoRight {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.txt-cargoRight {
+    font-size: 14px;
+}
+
+.circle {
+    width: 26px;
+    height: 26px;
+    background-color: blueviolet;
+    border-radius: 13px;
+    border: 2px solid #ca92e5;
+    position: absolute;
+    left: 55.2%;
+    margin-top: 14px;
+}
+
+.circleUm {
+    width: 26px;
+    height: 26px;
+    background-color: blueviolet;
+    border-radius: 13px;
+    border: 2px solid #ca92e5;
+    position: absolute;
+    left: 55.2%;
+    margin-top: 14px;
+}
+
+.circleDois {
+    width: 26px;
+    height: 26px;
+    background-color: blueviolet;
+    border-radius: 13px;
+    border: 2px solid #ca92e5;
+    position: absolute;
+    left: 55.2%;
+    margin-top: 178px;
+}
+
+.botaoExperiencia {
+    margin-top:40px;
+    left:35%;
+}
+
+/* TRABALHOS */
+.trabalhos {
+    padding-top: 15vh;
+    height: 140vh;
+    border-bottom: 1px solid #CCC;
+    background-color:rgb(250, 250, 250);
+}
+
+.trabalhos-interno {
+    padding-left: 10% !important;
+}
+
+.trabalhos h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.trabalhos h2 {
+    font-size: 15px;
+    font-weight: 300;
+    color: #CCC;
+}
+
+.galeriaToda {
+    height: 280px;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.galeriaToda p {
+    color: #000;
+    font-weight: 600;
+    margin: 0px;
+    padding-top: 5px;
+}
+
+.galeriaToda span {
+    color: #000;
+}
+
+.galeriaToda img {
+    width: 100%;
+    max-height: 300px;
+}
+
+.bgbox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    z-index: 1;
+}
+
+.box-branca {
+    position: fixed;
+    left: 58%;
+    top: 50%;
+    width: 520px;
+    height: 560px;
+    background-color: #FFF;
+    margin-left: -260px;
+    margin-top: -280px;
+    padding: 20px;
+    z-index: 1;
+    display: none;
+}
+
+.fechar {
+    border: 3px solid blueviolet;
+    height: 40px;
+    width: 100px;
+    color: #FFF;
+    background-color: blueviolet;
+    font-weight: 600;
+    margin-top: 10px;
+    float: right;
+}
+
+.github {
+    margin-top: 10px;
+    left: 34%;
+}
+
+
+/* CONTATO */
+.contato {
+    padding-top: 15vh;
+    height: 110vh;
+    border-bottom: 1px solid #CCC;
+}
+
+.contato-interno {
+    padding-left: 10% !important;
+}
+
+.contato h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.contato h2 {
+    font-size: 15px;
+    font-weight: 300;
+    color: #CCC;
+}
+
+.box-contato {
+    width: 240px;
+    height: 140px;
+    margin-top: 10px;
+    margin-right: 40px;
+    background-color: #fff;
+    border: 1px solid #efefef;
+    padding: 10px;
+    box-shadow: 5px 10px 25px 0px #888;
+    text-align: center;
+}
+
+.box-contato i {
+    margin-top: 10px;
+    font-size: 46px;
+    color: blueviolet;
+}
+
+.box-contato p {
+    margin: 0px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.box-contato span {
+    color: #a5a5a5;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.formulario {
+    margin-top: 50px;
+    width: 85%;
+}
+
+.formSuperior input {
+    width: 262px !important;
+    margin-right: 10px;
+}
+
+.formAssunto textarea {
+    margin-top: 10px;
+    width: 95.5%;
+}
+
+.botaoContato {
+    float: right;
+    margin-right: 40px;
+}
+
+
+/* FOOTER */
+footer {
+    height: 60px;
+}
+
+.footerInterno {
+    padding-left: 10% !important;
+    text-align: center;
+}
+
+.footerInterno h3 {
+    font-size: 11px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #898989;
+}
+
+.footerInterno a p, a i {
+    margin: 0px;
+    font-weight: 600;
+    font-size: 14px;
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.footerInterno a:link {
+    text-decoration: none;
+}
+
+.iconsFooter i {
+    margin-right: 10px;
+    color: #898989;
+}
+
+
+
+/* MEDIA QUERY */
+
+@media (min-width: 1660px) and (max-width: 1920px) {
+
+    .menu-left h1 {
+        margin-top: 20vh;
+        font-size: 46px;
+        margin-left: 35px;
+    }
+    
+    .menu-left li>a {
+        font-size: 17px;
+    }
+
+    .menu-left li {
+        margin-left: 40px;
+    }
+
+    .bannertexto {
+        width: 700px;
+        padding-left: 240px;
+    }
+
+    .bannertexto h1 {
+        font-size: 60px;
+    }
+
+    .bannertexto h2 {
+        font-size: 20px;
+    }
+
+    .bannertexto p {
+        font-size: 18px;
+    }
+
+    
+    .sobre {
+        padding-top: 20vh;
+    }
+
+    .sobre-interno {
+        padding-left: 0px !important;
+    }
+
+    .imgprofile img {
+        width: 400px;
+        border-radius: 25px;
+    }
+
+    .sobremim {
+        margin-left: 8%;
+    }
+
+    .sobremim h2 {
+        padding-top: 30px;
+        font-size: 46px;
+        margin-left: 100px;
+    }
+
+    .sobremim h3 {
+        padding-top: 20px;
+        font-size: 22px;
+        margin-left: 100px;
+    }
+
+    .sobremim p {
+        padding-top: 10px;
+        margin-right: 10%;
+        font-size: 20px;
+        margin-left: 100px;
+    }
+
+    .pontos ul li {
+        margin-left: 120px;
+        font-size: 18px;
+    }
+
+    .botaoSobre {
+        margin-top: 40px;
+        margin-left: 100px;
+    }
+
+
+    
+        
+    .habilidade-interno {
+        padding-left: 0px !important;
+    }
+
+    .habilidade-interno h1 {
+        font-size: 46px;
+    }
+
+    .habilidade-interno h2 {
+        font-size: 18px;
+    }
+
+    .skillBar-titulo {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .skillBar-porce {
+        font-size: 18px;
+        margin-top: 50px;
+        margin-right: 10%;
+        margin-bottom: 20px;
+    }
+
+    .skillBar {
+        height: 8px;
+    }
+
+    .skillBar-bs, .skillBar-css, .skillBar-html,
+    .skillBar-git, .skillBar-js, .skillBar-php, .skillBar-lara, .skillBar-sql, .skillBar-vue, .skillBar-jq {
+        height: 8px;
+    }
+
+
+
+    
+    .experiencia {
+        height: 120vh;
+    }
+
+    .exp-interno {
+        padding-left: 0px !important;
+    }
+
+    .exp-interno h1 {
+        font-size: 46px;
+    }
+
+    .exp-interno h2 {
+        font-size: 18px;
+    }
+
+    .timeline {
+        width: 5px;
+        height: 540px;
+        left: 52%;
+    }
+
+    .box {
+        width: 430px;
+        border-radius: 15px;
+    }
+
+    .box1 {
+        width: 430px;
+        border-radius: 15px;
+        margin-right: 11%;
+    }
+
+    .box2 {
+        width: 430px;
+        border-radius: 15px;
+    }
+
+    .data, .dataRight {
+        font-size: 16px;
+        width: 60px;
+        border-radius: 6px;
+    }
+
+    .cargo, .cargoRight {
+        font-size: 18px;
+    }
+
+    .txt-cargo, .txt-cargoRight {
+        font-size: 16px;
+    }
+
+    .circle {
+        width: 28px;
+        height: 28px;
+        border-radius: 14px;
+        left: 51.4%;
+        margin-top: 14px;
+    }
+
+    .circleUm {
+        width: 28px;
+        height: 28px;
+        border-radius: 14px;
+        left: 51.4%;
+        margin-top: 14px;
+    }
+
+    .circleDois {
+        width: 28px;
+        height: 28px;
+        border-radius: 14px;
+        left: 51.4%;
+        margin-top: 190px;
+    }
+
+    .botaoExperiencia {
+        margin-top: 80px;
+        left: 38%;
+    }
+
+
+
+    
+    .trabalhos {
+        height: 120vh;
+    }
+
+    .trabalhos-interno {
+        padding-left: 0px !important;
+    }
+
+    .trabalhos h1 {
+        font-size: 46px;
+    }
+
+    .trabalhos h2 {
+        font-size: 18px;
+    }
+
+    .galeriaToda {
+        height: 350px;
+        margin-top: 20px;
+        margin-right: 80px;
+    }
+
+    .galeriaToda p {
+        font-size: 18px;
+        padding-top: 8px;
+    }
+
+    .box-branca {
+        left: 58%;
+        top: 60%;
+        width: 720px;
+        height: 760px;
+        margin-left: -460px;
+        margin-top: -480px;
+    }
+
+    .github {  
+        margin-top: 10px;
+        left: 38%;
+    }
+    
+
+
+
+    .contato {
+        padding-top: 15vh;
+        height: 110vh;
+        border-bottom: 1px solid #CCC;
+    }
+
+    .contato-interno {
+        padding-left: 0% !important;
+    }
+
+    .contato h1 {
+        font-size: 46px;
+    }
+
+    .contato h2 {
+        font-size: 18px;
+    }
+
+    .box-contato {
+        width: 320px;
+        height: 190px;
+        margin-top: 15px;
+        margin-right: 50px;
+    }
+
+    .box-contato i {
+        margin-top: 15px;
+        font-size: 60px;
+    }
+
+    .box-contato p {
+        margin-top: 15px;
+        font-size: 18px;
+    }
+
+    .box-contato span {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    .formSuperior input {
+        height: 50px;   
+        width: 340px !important;
+        margin-right: 24px;
+    }
+
+    .formAssunto textarea {
+        margin-top: 24px;
+        width: 95%;
+        height: 200px !important;
+    }
+
+    .botaoContato {
+        margin-right: 60px;
+    }
+}
+
+
+@media (max-width: 1200px) and (min-width: 1024px) {
+        
+    .sobre {
+        padding-top: 15vh;
+    }
+
+    .sobre-interno {
+        padding-left: 5% !important;
+    }
+
+    .imgprofile img {
+        width: 280px;
+        border-radius: 15px;
+    }
+
+    .sobremim h2 {
+        padding-top: 15px;
+        font-size: 38px;
+        margin-left: 60px;
+    }
+
+    .sobremim h3 {
+        padding-top: 8px;
+        font-size: 16px;
+        margin-left: 60px;
+    }
+
+    .sobremim p {
+        padding-top: 5px;
+        margin-right: 10%;
+        margin-left: 60px;
+        font-size: 16px;
+    }
+
+    .pontos ul li {
+        margin-left: 75px;
+        font-size: 16px;
+    }
+
+    .botaoSobre {
+        margin-top:10px;
+        margin-left:60px;
+    }
+
+
+
+    .experiencia {
+        padding-top: 8vh;
+        height: 112vh;
+    }
+
+    .exp-interno {
+        padding-left: 5% !important;
+    }
+
+    .exp-interno h1 {
+        font-size: 32px;
+    }
+
+    .exp-interno h2 {
+        font-size: 15px;
+    }
+
+    .timeline {
+        width: 3px;
+        height: 550px;
+        left: 60%;
+    }
+
+    .box {
+        width: 300px;
+    }
+
+    .box1 {
+        width: 300px;
+        margin-right: 5%;
+    }
+
+    .box2 {
+        width: 300px;
+    }
+
+    .circle {
+        left: 58.8%;
+        margin-top: 14px;
+    }
+
+    .circleUm {
+        left: 58.8%;
+    }
+
+    .circleDois {
+        left: 58.8%;
+        margin-top: 195px;
+    }
+
+    .botaoExperiencia {
+        left:38%;
+    }
+
+
+
+    .trabalhos {
+        padding-top: 10vh;
+        height: 115vh;
+    }
+
+    .trabalhos h1 {
+        font-size: 32px;
+    }
+
+    .trabalhos h2 {
+        font-size: 15px;
+    }
+
+
+
+
+    .contato {
+        padding-top: 10vh;
+        height: 105vh;
+    }
+
+    .contato-interno {
+        padding-left: 5% !important;
+    }
+
+    .contato h1 {
+        font-size: 32px;
+    }
+
+    .contato h2 {
+        font-size: 15px;
+    }
+
+    .box-contato {
+        width: 210px;
+        height: 145px;
+        margin-right: 30px;
+    }
+
+    .box-contato i {
+        font-size: 40px;
+    }
+
+    .box-contato p {
+        font-size: 14px;
+    }
+
+    .box-contato span {
+        font-size: 13px;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    .formSuperior input {
+        width: 223px !important;
+        margin-right: 15px;
+    }
+
+    .formAssunto textarea {
+        margin-top: 15px;
+        width: 95.5%;
+        height: 160px !important;
+    }
+
+    .botaoContato {
+        margin-right: 32px;
+    }
+
+    .footerInterno a p {
+        font-size: 9px;
+    }
+}
+
+
+@media (max-width: 600px) and (min-width: 370px) {
+    .menu-left {
+        display: none;
+    }
+
+    .main {
+        margin-left:0px !important;
+    }
+}
+
+
