@@ -71,22 +71,19 @@
                                 <h2>Sobre <span style="color:blueviolet">Mim</span></h2>
                                 <h3><span style="color:blueviolet">Web</span> developer</h3>
                                 <p>
-                                    Eterno estudante na área de programação webfull stack(front-end, back-end) desenvolvendoprojetos
-                                    pessoais para desenvolver meusconhecimentos e crescer como programador aindamais.
-                                    Graduado em design gráfico.
+                                Eterno estudante na área de programação web full stack (front-end, back-end), e sim eu gosto igualmente tanto do front quanto do back (não consigo me decidir qual é mais legal. <i class="far fa-frown-open"></i>
                                 </p>
                                 <p>
-                                    Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem
-                                    sendo utilizado desde o século XVI.
+                                Sou graduado em design gráfico, porém acabei gostando da programação, até mesmo durante o curso quando tivemos algumas aulas sobre programação, terminei a faculdade, e fui atrás de um curso de programação, decidi por fazer full stack na digital house, pois por eu pode aprender tanto front quanto back me fez ver, com bons olhos a oportunidade. Desde então venho me aperfeiçoando na área.
                                 </p>
                                 <div class="row pontos">
                                     <ul>
-                                        <li><i class="fas fa-angle-double-right"></i> Ponto 1</li>
-                                        <li><i class="fas fa-angle-double-right"></i> Ponto 1</li>
+                                        <li><i class="fas fa-angle-double-right"></i> Dedicado</li>
+                                        <li><i class="fas fa-angle-double-right"></i> Conciso</li>
                                     </ul>
                                     <ul style="margin-left: 40px;">
-                                        <li><i class="fas fa-angle-double-right"></i> Ponto 1</li>
-                                        <li><i class="fas fa-angle-double-right"></i> Ponto 1</li>
+                                        <li><i class="fas fa-angle-double-right"></i> Esforçado</li>
+                                        <li><i class="fas fa-angle-double-right"></i> Organizado</li>
                                     </ul>
                                 </div>
                                 <button class="saibamais botaoSobre" onClick="linkedin()">READ MORE</button>
@@ -261,42 +258,42 @@
                                     <img src="imgs/foto.jpg" />
                                 </a>
                                 <p>Fotógrafia</p>
-                                <span>texto texto texto texto texto </span>
+                                <span>Projeto para estudos em html e css de um stúdio de fotógrafia.</span>
                             </div>
                             <div class="col-lg-3 galeriaToda">
                                 <a href="javascript:;" class="galeria">
                                     <img src="imgs/lester.jpg" />
                                 </a>
                                 <p>Lester</p>
-                                <span>texto texto texto texto texto </span>
+                                <span>Baseado em um teplate existente, usado html, css e js. </span>
                             </div>
                             <div class="col-lg-3 galeriaToda">
                                 <a href="javascript:;" class="galeria">
                                     <img src="imgs/portfalse.jpg" />
                                 </a>
                                 <p>Portfólio</p>
-                                <span>texto texto texto texto texto </span>
+                                <span>Primeiro portfólio feito, bem simples em html e css. </span>
                             </div>
                             <div class="col-lg-3 galeriaToda">
                                 <a href="javascript:;" class="galeria">
                                     <img src="imgs/valkyrie.jpg" />
                                 </a>
                                 <p>Valkyrie</p>
-                                <span>texto texto texto texto texto </span>
+                                <span>Projeto de uma wiki de um jogo, feita com html, css e php.</span>
                             </div>
                             <div class="col-lg-3 galeriaToda">
                                 <a href="javascript:;" class="galeria">
                                     <img src="imgs/cross.jpg" />
                                 </a>
                                 <p>Cross373</p>
-                                <span>texto texto texto texto texto </span>
+                                <span>Projeto integrador do curso. Feito em grupo. Laravel, php, js, css e html. </span>
                             </div>
                             <div class="col-lg-3 galeriaToda">
                                 <a href="javascript:;" class="galeria">
                                     <img src="imgs/portfolio2.jpg" />
                                 </a>
                                 <p>Portfólio 2.0</p>
-                                <span>texto texto texto texto texto </span>
+                                <span>Segundo portfólio criado, feito com html, bs, jquery e css.</span>
                             </div>
                             <div class="bgbox"></div>
                             <div class="box-branca">
