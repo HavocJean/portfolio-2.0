@@ -16,6 +16,18 @@ ul, li {
 }
 
 /* MENU ESQUERDA FIXO */
+#check {
+    display: none;
+}
+
+.menu-retratil {
+    font-size: 40px;
+    z-index: 10;
+    margin-left: 10px;
+    display: none;
+    cursor: pointer;
+}
+
 .menu-left {
     background-color: #f7f7f7;
     height: 100vh;
@@ -714,6 +726,10 @@ footer {
     color: #898989;
 }
 
+.toTop {
+    margin-top:10px;
+}
+
 
 
 /* MEDIA QUERY */
@@ -1207,12 +1223,388 @@ footer {
 
 @media (max-width: 600px) and (min-width: 370px) {
     .menu-left {
-        display: none;
+        left: -220px;
+        -webkit-transition: all .25s linear;
+        -moz-transition: all .25s linear;
+        -ms-transition: all .25s linear;
+        -o-transition: all .25s linear;
+        transition: all .25s linear;
+    }
+
+    .menu-retratil {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+    }
+    
+    #check:checked ~ .menu-left {
+        -webkit-transform: translate(220px);
+        -moz-transform: translate(220px);
+        -ms-transform: translate(220px);
+        -o-transform: translate(220px);
+        transform: translate(220px);
+    }
+
+    #check:checked ~ .main {
+        margin-left: 220px !important;
+        -webkit-transition: all .25s linear;
+        -moz-transition: all .25s linear;
+        -ms-transition: all .25s linear;
+        -o-transition: all .25s linear;
+        transition: all .25s linear;
     }
 
     .main {
         margin-left:0px !important;
+        -webkit-transition: all .25s linear;
+        -moz-transition: all .25s linear;
+        -ms-transition: all .25s linear;
+        -o-transition: all .25s linear;
+        transition: all .25s linear;
+    }
+
+    .bannertexto {
+        width: 320px;
+        padding-top: 20vh;
+        padding-left: 50px;
+    }
+
+    .bannertexto h1 {
+        font-size: 38px;
+    }
+
+    .bannertexto h2 {
+        font-size: 24px;
+    }
+
+    .bannertexto p {
+        font-size: 16px;
+    }
+
+
+
+    
+    .sobre {
+        padding-top: 7vh;
+        height: 120vh;
+        border-bottom: 1px solid #CCC;
+    }
+
+    .sobre-interno {
+        padding-left: 0 !important;
+    }
+
+    .imgprofile img {
+        width: 160px;
+        border-radius: 10px;
+        margin-left: 125px;
+    }
+
+    .sobremim {
+        margin-left: 0px;
+    }
+
+    .sobremim h2 {
+        padding-top: 15px;
+        font-size: 30px;
+        margin-left: 125px;
+    }
+
+    .sobremim h3 {
+        padding-top: 0px;
+        font-size: 16px;
+        margin-left: 146px;
+    }
+
+    .sobremim p {
+        padding-top: 10px;
+        margin-right: 20px;
+        margin-left: 50px;
+    }
+
+    .pontos ul li {
+        margin-left: 65px;
+    }
+
+    .botaoSobre {
+        float: right;
+        margin-right: 20px;
+    }
+
+
+
+    
+    .habilidade {
+        padding-top: 7vh;
+        height: 115vh;
+    }
+
+    .habilidade-interno {
+        padding-left: 0% !important;
+    }
+
+    .habilidade-interno h1 {
+        font-size: 30px;
+        margin-left: 120px;
+    }
+
+    .habilidade-interno h2 {
+        font-size: 13px;
+        margin-left: 120px;
+    }
+
+    .skillBar-titulo {
+        font-size: 16px;
+        margin-left: 30px;
+        margin-top: 25px;
+    }
+
+    .skillBar-porce {
+        font-size: 14px;
+        margin-top: 25px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .skillBar {
+        height: 3px;
+        margin-left: 30px;
+    }
+
+    .skillBar-bs, .skillBar-css, .skillBar-html, 
+    .skillBar-js, .skillBar-php, .skillBar-lara, 
+    .skillBar-sql, .skillBar-git, .skillBar-jq, 
+    .skillBar-vue {
+        height: 3px;
+    }
+
+
+
+    .experiencia {
+        padding-top: 7vh;
+        height: 115vh;
+    }
+
+    .exp-interno {
+        padding-left: 0% !important;
+    }
+
+    .exp-interno h1 {
+        font-size: 30px;
+        margin-left: 120px;
+    }
+
+    .exp-interno h2 {
+        font-size: 13px;
+        margin-left: 120px;
+    }
+
+    .timeline {
+        display: none;
+    }
+
+    .box {
+        width: 90%;
+        text-align: left;
+        margin-left: 25px;
+    }
+
+    .box1 {
+        width: 90%;
+        text-align: left;
+        margin-left: 25px;
+        margin-right: 0px;
+        float: none;
+        margin-top: 15px;
+    }
+
+    .box2 {
+        width: 90%;
+        text-align: left;
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+
+    .data {
+        font-size: 13px;
+        float: left;
+    }
+
+    .dataRight {
+        font-size: 13px;
+    }
+
+    .cargo, .cargoRight {
+        font-size: 15px;
+    }
+
+    .txt-cargo, .txt-cargoRight {
+        font-size: 13px;
+    }
+
+    .circle, .circleUm, .circleDois {
+        display: none;
+    }
+
+    .botaoExperiencia {
+        margin-top:40px;
+        left:35%;
+    }
+ 
+
+
+    .trabalhos {
+        padding-top: 7vh;
+        height: 225vh;
+    }
+
+    .trabalhos-interno {
+        padding-left: 0% !important;
+    }
+
+    .trabalhos h1 {
+        font-size: 30px;
+        margin-left: 120px;
+    }
+
+    .trabalhos h2 {
+        font-size: 13px;
+        margin-left: 120px;
+    }
+
+    .galeriaToda {
+        height: 180px;
+        width: 100%;
+        margin-top: 30px;
+        margin-right: 10px;
+        margin-left: 25px;
+        text-align: right;
+    }
+
+    .galeriaToda p {
+        margin: 0px;
+        padding-top: 10px;
+        float: right;
+        width: 40%;
+    }
+
+    .galeriaToda span {
+        width: 40%;
+        margin-top: 7px;
+        margin-right: 0px;
+        float: right;
+    }
+
+    .galeriaToda img {
+        width: 60%;
+        max-height: 180px;
+        float: left;
+    }
+
+    .box-branca {
+        left: 40%;
+        top: 40%;
+        width: 380px;
+        height: 420px;
+        margin-left: -150px;
+        margin-top: -160px;
+        padding: 10px;
+    }
+
+    .github {
+        margin-top: 40px;
+        left: 34%;
+    }
+
+
+
+    .contato {
+        padding-top: 7vh;
+        height: 140vh;
+    }
+
+    .contato-interno {
+        padding-left: 0% !important;
+    }
+
+    .contato h1 {
+        font-size: 30px;
+        margin-left: 120px;
+    }
+
+    .contato h2 {
+        font-size: 13px;
+        margin-left: 120px;
+    }
+
+    .box-contato {
+        width: 60%;
+        height: 120px;
+        margin-top: 10px;
+        margin-left: 20%;
+        margin-right: 0;
+    }
+
+    .box-contato i {
+        margin-top: 1px;
+        font-size: 40px;
+    }
+
+    .box-contato p {
+        font-size: 14px;
+    }
+
+    .box-contato span {
+        font-size: 13px;
+    }
+
+    .formulario {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .formSuperior input {
+        width: 320px !important;
+        margin-left: 40px;
+    }
+
+    .formAssunto textarea {
+        margin-top: 8px;
+        width: 320px;
+        margin-left: 40px;
+    }
+
+    .botaoContato {
+        margin-right: 20px;
+    }
+    
+
+
+    
+    footer {
+        height: 30px;
+    }
+
+    .footerInterno {
+        padding-left: 0px !important;
+    }
+
+    .footerInterno h3 {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .footerInterno a p, a i {
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    .iconsFooter i {
+        margin-right: 10px;
+        color: #898989;
+    }
+
+    .toTop {
+        margin-top: 0px;
     }
 }
-
-
