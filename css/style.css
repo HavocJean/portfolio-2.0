@@ -1888,7 +1888,7 @@ footer {
 
     .contato {
         padding-top: 7vh;
-        height: 140vh;
+        height: 145vh;
     }
 
     .contato-interno {
@@ -1958,22 +1958,28 @@ footer {
     .footerInterno h3 {
         font-size: 10px;
         margin-top: 5px;
+        margin-left: 20px;
     }
 
-    .footerInterno a p, a i {
+    .footerInterno a i {
         margin: 0px;
         font-size: 14px;
+        margin-left: 20px;
     }
 
-    .iconsFooter i {
-        margin-right: 10px;
+    .footerInterno a p {
+        margin: 0px;
+        font-size: 11px;
+    }
+
+    .iconsFooter a i {
         color: #898989;
     }
 
     .toTop {
         margin-top: 0px;
+        margin-right: 10px;
     }
-
 }
 
 
