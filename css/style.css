@@ -733,7 +733,6 @@ footer {
 
 
 /* MEDIA QUERY */
-
 @media (min-width: 1660px) and (max-width: 1920px) {
 
     .menu-left h1 {
@@ -813,8 +812,6 @@ footer {
         margin-top: 40px;
         margin-left: 100px;
     }
-
-
     
         
     .habilidade-interno {
@@ -849,8 +846,6 @@ footer {
     .skillBar-git, .skillBar-js, .skillBar-php, .skillBar-lara, .skillBar-sql, .skillBar-vue, .skillBar-jq {
         height: 8px;
     }
-
-
 
     
     .experiencia {
@@ -934,8 +929,6 @@ footer {
         left: 38%;
     }
 
-
-
     
     .trabalhos {
         height: 120vh;
@@ -978,8 +971,6 @@ footer {
         left: 38%;
     }
     
-
-
 
     .contato {
         padding-top: 15vh;
@@ -1043,6 +1034,7 @@ footer {
 }
 
 
+
 @media (max-width: 1200px) and (min-width: 1024px) {
         
     .sobre {
@@ -1086,7 +1078,6 @@ footer {
         margin-top:10px;
         margin-left:60px;
     }
-
 
 
     .experiencia {
@@ -1144,7 +1135,6 @@ footer {
     }
 
 
-
     .trabalhos {
         padding-top: 10vh;
         height: 115vh;
@@ -1157,8 +1147,6 @@ footer {
     .trabalhos h2 {
         font-size: 15px;
     }
-
-
 
 
     .contato {
@@ -1221,6 +1209,7 @@ footer {
 }
 
 
+
 @media (max-width: 600px) and (min-width: 370px) {
     .menu-left {
         left: -220px;
@@ -1281,8 +1270,6 @@ footer {
         font-size: 16px;
     }
 
-
-
     
     .sobre {
         padding-top: 7vh;
@@ -1331,8 +1318,6 @@ footer {
         margin-right: 20px;
     }
 
-
-
     
     .habilidade {
         padding-top: 7vh;
@@ -1377,7 +1362,6 @@ footer {
     .skillBar-vue {
         height: 3px;
     }
-
 
 
     .experiencia {
@@ -1452,7 +1436,6 @@ footer {
     }
  
 
-
     .trabalhos {
         padding-top: 7vh;
         height: 225vh;
@@ -1517,7 +1500,6 @@ footer {
     }
 
 
-
     .contato {
         padding-top: 7vh;
         height: 140vh;
@@ -1579,8 +1561,6 @@ footer {
     }
     
 
-
-    
     footer {
         height: 30px;
     }
@@ -1608,3 +1588,393 @@ footer {
         margin-top: 0px;
     }
 }
+
+
+
+@media (max-width: 369px) and (min-width: 340px) {
+    .menu-left {
+        left: -220px;
+        -webkit-transition: all .25s linear;
+        -moz-transition: all .25s linear;
+        -ms-transition: all .25s linear;
+        -o-transition: all .25s linear;
+        transition: all .25s linear;
+    }
+
+    .menu-retratil {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+    }
+    
+    #check:checked ~ .menu-left {
+        -webkit-transform: translate(220px);
+        -moz-transform: translate(220px);
+        -ms-transform: translate(220px);
+        -o-transform: translate(220px);
+        transform: translate(220px);
+    }
+
+    #check:checked ~ .main {
+        margin-left: 220px !important;
+        -webkit-transition: all .25s linear;
+        -moz-transition: all .25s linear;
+        -ms-transition: all .25s linear;
+        -o-transition: all .25s linear;
+        transition: all .25s linear;
+    }
+
+    .main {
+        width: 100vw !important;
+        margin-left:0px !important;
+        -webkit-transition: all .25s linear;
+        -moz-transition: all .25s linear;
+        -ms-transition: all .25s linear;
+        -o-transition: all .25s linear;
+        transition: all .25s linear;
+    }
+
+    .bannertexto {
+        width: 300px;
+        padding-top: 20vh;
+        padding-left: 40px;
+    }
+
+    .bannertexto h1 {
+        font-size: 36px;
+    }
+
+    .bannertexto h2 {
+        font-size: 22px;
+    }
+
+    .bannertexto p {
+        font-size: 15px;
+    }
+
+
+    
+    .sobre {
+        padding-top: 7vh;
+        height: 130vh;
+    }
+
+    .sobre-interno {
+        padding-left: 0 !important;
+    }
+
+    .imgprofile img {
+        width: 140px;
+        border-radius: 10px;
+        margin-left: 115px;
+    }
+
+    .sobremim {
+        margin-left: 0px;
+    }
+
+    .sobremim h2 {
+        padding-top: 10px;
+        font-size: 28px;
+        margin-left: 110px;
+    }
+
+    .sobremim h3 {
+        padding-top: 0px;
+        font-size: 15px;
+        margin-left: 130px;
+    }
+
+    .sobremim p {
+        padding-top: 7px;
+        margin-right: 20px;
+        margin-left: 40px;
+        font-size: 14px;
+    }
+
+    .pontos ul li {
+        margin-left: 50px;
+        font-size: 13px;
+    }
+
+    .botaoSobre {
+        float: right;
+        margin-right: 50px;
+    }
+
+
+    
+    .habilidade {
+        padding-top: 7vh;
+        height: 110vh;
+    }
+
+    .habilidade-interno {
+        padding-left: 0% !important;
+    }
+
+    .habilidade-interno h1 {
+        font-size: 28px;
+        margin-left: 100px;
+    }
+
+    .habilidade-interno h2 {
+        font-size: 12px;
+        margin-left: 100px;
+    }
+
+    .skillBar-titulo {
+        font-size: 14px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .skillBar-porce {
+        font-size: 13px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .skillBar {
+        height: 3px;
+        margin-left: 20px;
+    }
+
+    .skillBar-bs, .skillBar-css, .skillBar-html, 
+    .skillBar-js, .skillBar-php, .skillBar-lara, 
+    .skillBar-sql, .skillBar-git, .skillBar-jq, 
+    .skillBar-vue {
+        height: 3px;
+    }
+
+
+    .experiencia {
+        padding-top: 7vh;
+        height: 120vh;
+    }
+
+    .exp-interno {
+        padding-left: 0% !important;
+    }
+
+    .exp-interno h1 {
+        font-size: 28px;
+        margin-left: 100px;
+    }
+
+    .exp-interno h2 {
+        font-size: 12px;
+        margin-left: 100px;
+    }
+
+    .timeline {
+        display: none;
+    }
+
+    .box {
+        width: 90%;
+        text-align: left;
+        margin-left: 6%;
+    }
+
+    .box1 {
+        width: 90%;
+        text-align: left;
+        margin-left: 6%;
+        margin-right: 0px;
+        float: none;
+        margin-top: 10px;
+    }
+
+    .box2 {
+        width: 90%;
+        text-align: left;
+        margin-left: 6%;
+        margin-top: 10px;
+    }
+
+    .data {
+        font-size: 13px;
+        float: left;
+    }
+
+    .dataRight {
+        font-size: 13px;
+    }
+
+    .cargo, .cargoRight {
+        font-size: 15px;
+    }
+
+    .txt-cargo, .txt-cargoRight {
+        font-size: 13px;
+    }
+
+    .circle, .circleUm, .circleDois {
+        display: none;
+    }
+
+    .botaoExperiencia {
+        margin-top: 20px;
+        left: 30%;
+    }
+ 
+
+
+    .trabalhos {
+        padding-top: 7vh;
+        height: 225vh;
+    }
+
+    .trabalhos-interno {
+        padding-left: 0% !important;
+    }
+
+    .trabalhos h1 {
+        font-size: 28px;
+        margin-left: 120px;
+    }
+
+    .trabalhos h2 {
+        font-size: 12px;
+        margin-left: 120px;
+    }
+
+    .galeriaToda {
+        height: 180px;
+        width: 100%;
+        margin-top: 15px;
+        margin-right: 10px;
+        margin-left: 25px;
+        text-align: right;
+    }
+
+    .galeriaToda p {
+        margin: 0px;
+        padding-top: 10px;
+        float: right;
+        width: 45%;
+    }
+
+    .galeriaToda span {
+        width: 45%;
+        margin-top: 7px;
+        margin-right: 0px;
+        float: right;
+    }
+
+    .galeriaToda img {
+        width: 50%;
+        float: left;
+    }
+
+    .box-branca {
+        left: 40%;
+        top: 40%;
+        width: 380px;
+        height: 420px;
+        margin-left: -150px;
+        margin-top: -160px;
+        padding: 10px;
+    }
+
+    .github {
+        margin-top: 40px;
+        left: 34%;
+    }
+
+
+
+    .contato {
+        padding-top: 7vh;
+        height: 140vh;
+    }
+
+    .contato-interno {
+        padding-left: 0% !important;
+    }
+
+    .contato h1 {
+        font-size: 28px;
+        margin-left: 120px;
+    }
+
+    .contato h2 {
+        font-size: 12px;
+        margin-left: 120px;
+    }
+
+    .box-contato {
+        width: 60%;
+        height: 120px;
+        margin-top: 10px;
+        margin-left: 20%;
+        margin-right: 0;
+    }
+
+    .box-contato i {
+        margin-top: 1px;
+        font-size: 40px;
+    }
+
+    .box-contato p {
+        font-size: 14px;
+    }
+
+    .box-contato span {
+        font-size: 13px;
+    }
+
+    .formulario {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .formSuperior input {
+        width: 280px !important;
+        margin-left: 40px;
+    }
+
+    .formAssunto textarea {
+        margin-top: 8px;
+        width: 280px;
+        margin-left: 40px;
+    }
+
+    .botaoContato {
+        margin-right: 20px;
+    }
+
+
+    footer {
+        height: 30px;
+    }
+
+    .footerInterno {
+        padding-left: 0px !important;
+    }
+
+    .footerInterno h3 {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .footerInterno a p, a i {
+        margin: 0px;
+        font-size: 14px;
+    }
+
+    .iconsFooter i {
+        margin-right: 10px;
+        color: #898989;
+    }
+
+    .toTop {
+        margin-top: 0px;
+    }
+
+}
+
+
+
